@@ -18,10 +18,12 @@ import java.util.Arrays;
 
     // main method which initializes array and call methods
     public static void main(String[] args) {
-        //initializing new array
-        double[] anArray = {1,2,3,4,5,6,7,8,9,-10};
 
-        System.out.println("Array: "+ Arrays.toString(anArray));
+        //initializing new array
+        double[] anArray = {1,2,3,4,5,6,7,8,9,10};
+
+        //Calling methods and printing results
+        System.out.println("Input array: "+ Arrays.toString(anArray));
         System.out.println("Sum of elements = "+getSum(anArray));
         System.out.println("The maximum is "+getMax(anArray));
         System.out.println("The minimum is "+getMin(anArray));
@@ -36,15 +38,15 @@ import java.util.Arrays;
     static double getSum(double[] anArray){
         double sum=0; //sum of elements
 
-        for (int i=0;i<anArray.length;i++){
-            sum+=anArray[i];
+        for (double element: anArray){
+            sum+=element;
         }
 
         return sum;
     }
 
 
-    //This method returns maximum of elements
+    //This method returns the maximum of elements
     static double getMax(double[] anArray){
         double max=anArray[0]; //the maximum
 
@@ -56,7 +58,7 @@ import java.util.Arrays;
     }
 
 
-    //This method returns minimum of elements
+    //This method returns the minimum of elements
     static double getMin(double[] anArray){
         double min=anArray[0]; //the minimum
 
@@ -72,9 +74,9 @@ import java.util.Arrays;
     static double getMaxPositive(double[] anArray){
         double maxPositive=-1; //the maximum positive
 
-        for (int i=0;i<anArray.length;i++){
-            if (anArray[i]>0)
-                maxPositive=Math.max(anArray[i],maxPositive);
+        for (double element: anArray){
+            if (element>0)
+                maxPositive=Math.max(element,maxPositive);
         }
 
         return maxPositive;
@@ -85,8 +87,8 @@ import java.util.Arrays;
     static double getMultiplication(double[] anArray){
         double result=anArray[0]; //the result of multiplication
 
-        for (int i=1;i<anArray.length;i++){
-            result*=anArray[i];
+        for (double element: anArray){
+            result*=element;
         }
 
         return result;
