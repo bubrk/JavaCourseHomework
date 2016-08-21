@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * This is homework for Module 2 of JavaCore course.
- * <p>
+ *
  * "Input: array with size=10 can be one of two data types: Int and double. Elements of the array is a natural number. Calculate:
  * - sum
  * - min/max
@@ -47,7 +47,7 @@ public class Task1 {
         return sum;
     }
 
-    //Same for int[] array
+    //Same for int[] array............ is it OK to do in this way?
     static int getSum(int[] anArray) {
 
         return (int) getSum(convertIntToDouble(anArray));
