@@ -21,6 +21,8 @@ public class Task1 {
 
         //initializing new array
         double[] anArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        //double[] anArray = {3.75,7.84,1.1,10.51,4.36,7.7,9.52,64.47,100.79,8.88};
         //int[] anArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
         //Calling methods and printing results
@@ -34,7 +36,6 @@ public class Task1 {
         System.out.println("Modulus of the first and last elements = " + getModulus(anArray));
         System.out.println("Second largest element is " + getSecondLargest(anArray));
 
-        System.out.println(String.format("%.2f fjjdjg %.2f",anArray[1],anArray[2]));
     }
 
 
