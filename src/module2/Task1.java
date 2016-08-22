@@ -33,6 +33,8 @@ public class Task1 {
         System.out.println("The result of multiplication = " + getMultiplication(anArray));
         System.out.println("Modulus of the first and last elements = " + getModulus(anArray));
         System.out.println("Second largest element is " + getSecondLargest(anArray));
+
+        System.out.println(String.format("%.2f fjjdjg %.2f",anArray[1],anArray[2]));
     }
 
 
@@ -129,7 +131,7 @@ public class Task1 {
     //This method returns modulus of the first and last elements
     static double getModulus(double[] anArray) {
 
-        return anArray[0] / anArray[anArray.length - 1];
+        return anArray[0] % anArray[anArray.length - 1];
     }
 
     //Same for int[] array
