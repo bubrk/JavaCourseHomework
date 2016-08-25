@@ -12,7 +12,7 @@ public class Task2 {
     private static double[] balances = {1200, 250, 2000, 500, 3200};
     private static String[] ownerNames = {"Jane", "Ann", "Jack", "Oww", "Lane"};
 
-    private static int[] balances1 = {200, 200, 500, 4000, 30};
+    //private static int[] balances1 = {200, 200, 500, 4000, 30};
 
 /* Something from practical lesson
 
@@ -50,7 +50,7 @@ public class Task2 {
     //HOMEWORK 2.1
     // Write method which withdraw money from account and takes commision 5% of the transaction. Print OK + commision
     // + balance after withdrawal. Print NO is withdrawal is not possible
-    static double withdrawBalance(double balance, double withdrawal) {
+    public static double withdrawBalance(double balance, double withdrawal) {
 
         if ((balance - withdrawal * 1.05) >= 0) {
             balance = balance - withdrawal * 1.05;
@@ -65,7 +65,7 @@ public class Task2 {
     //You need to write method which withdraw money of particular account owner if he/she can. Print name + NO of
     // withdrawal fs not possible and name + sum of withdrawal + balance after withdrawal in other case. Commision is
     // 5% for all cases.
-    static double withdrawBalance(String ownerName, double withdrawal) {
+    public static double withdrawBalance(String ownerName, double withdrawal) {
 
         int ownerIndex;
 
@@ -91,7 +91,7 @@ public class Task2 {
 
     //HOMEWORK 2.3
     //You need to write method which will fund (пополнение) balance of particular user. Print name + balance after funding
-    static double fundBalance(String ownerName, double fund) {
+    public static double fundBalance(String ownerName, double fund) {
         int ownerIndex;
 
         ownerIndex = Arrays.asList(ownerNames).indexOf(ownerName);
