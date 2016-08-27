@@ -64,7 +64,7 @@ public class Task1 {
     }
 
     //Same for int[] array
-    public static int getMin(int[] anArray) {
+    public static int getMin(int anArray[]) {
 
         return (int) getMin(convertIntToDouble(anArray));
     }
@@ -91,7 +91,7 @@ public class Task1 {
 
     //This method returns multiplication of elements
     public static double getMultiplication(double[] anArray) {
-        double result = anArray[0]; //the result of multiplication
+        double result = 1; //the result of multiplication
 
         for (double element : anArray) {
             result *= element;
@@ -172,6 +172,8 @@ public class Task1 {
         System.out.println("Modulus of the first and last elements = " + getModulus(anArray));
         System.out.println("Second largest element is " + getSecondLargest(anArray));
 
-    }
 
+
+
+    }
 }

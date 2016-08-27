@@ -1,17 +1,17 @@
-import module2.Task1;
+package module2;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Created by User on 25.08.2016.
+ * Test for module2.Task1
  */
 public class Task1Test {
 
     private static final double DELTA = 1e-15;
-    double[] a1 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-    double[] a2 = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-    double[] a3 = {10, 10, 1, 2, 3, 4, 5, 6, 7, 8};
-    double[] a4 = {-1, -10, 0, -1, -11, 1, -1, -1, -1, -1};
+    private final double[] a1 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    private final double[] a2 = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+    private final double[] a3 = {10, 10, 1, 2, 3, 4, 5, 6, 7, 8};
+    private final double[] a4 = {-1, -10, 0, -1, -11, 1, -1, -1, -1, -1};
 
     @Test
     public void getSum() throws Exception {

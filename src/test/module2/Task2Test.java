@@ -1,9 +1,9 @@
-import module2.Task2;
+package module2;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Created by User on 25.08.2016.
+ * Test for module2.Task2
  */
 public class Task2Test {
 
