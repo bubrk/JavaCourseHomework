@@ -1,5 +1,7 @@
 package module3.task3;
 
+import java.util.Date;
+
 /**
  * You need to create following structure of the classes.
  * Class Course with fields: Date startDate, String name, int hoursDuration, String teacherName. Create two constructors
@@ -10,8 +12,10 @@ package module3.task3;
  * Create three constructors: two the same as in Student and one with all the fields of the class.
  * Class SpecialStudent that is child of CollegeStudent. With additional fields long secretKey, String email.
  * Create three constructors: two the same as in CollegeStudend and one with secretKey field.
- * Create getters and setters for all fields and make fields private as OOP principle follows. Create 5 objects
- * Course class. Create objects of others classes using every constructor. You must have 13 objects in Solution class.
+ * Create getters and setters for all fields and make fields private as OOP principle follows.
+ *
+ * Create 5 objects course class. Create objects of others classes using every constructor. You must have 13 objects
+ * in Solution class.
  */
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +23,9 @@ public class Main {
         Course course2 = new Course(12, "Course 2", "Teacher 2");
         Course course3 = new Course(13, "Course 3", "Teacher 3");
         Course course4 = new Course(14, "Course 4", "Teacher 4");
-        Course course5 = new Course(15, "Course 5", "Teacher 5");
+
+        Date date = new Date();
+        Course course5 = new Course(date, "Course 5");
 
         Student student1 = new Student("Steave","Jobs",1);
 

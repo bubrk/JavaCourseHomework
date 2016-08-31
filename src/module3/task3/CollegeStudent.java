@@ -9,6 +9,7 @@ public class CollegeStudent extends Student {
     private int rating;
     private long id;
 
+
     public CollegeStudent(String firstName, String lastName, int group) {
         super(firstName, lastName, group);
     }
