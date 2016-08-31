@@ -74,7 +74,9 @@ public class Task1Test {
         double result = Task1.getSecondLargest(a1);
         Assert.assertEquals(9, result, DELTA);
 
-        double[] a2 = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        //working on parameterized test
+
+       /* double[] a2 = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
         result = Task1.getSecondLargest(a2);
         Assert.assertEquals(9, result, DELTA);
 
@@ -112,7 +114,7 @@ public class Task1Test {
 
         double[] a11 = {10, 10, 1, 2, 3, 8, 5, 6, 7, 4};
         result = Task1.getSecondLargest(a11);
-        Assert.assertEquals(8, result, DELTA);
+        Assert.assertEquals(8, result, DELTA);*/
     }
 
 }
